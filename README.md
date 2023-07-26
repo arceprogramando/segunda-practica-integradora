@@ -1,9 +1,9 @@
-# Estrategia de autenticacion por terceros
+# Segunda practica Integradora (No finalizada)
 ## _Felipe Antonio Aleman Arce_
-### Ejercicio 9 entregable , Estrategia de autenticacion por terceros ( No Finalizada)
+### Ejercicio 10 entregable , Segunda practica Integradora( No Finalizada)
 [![Coderhouse](https://res.cloudinary.com/hdsqazxtw/image/upload/v1570710978/coderhouse.jpg)](https://github.com/arceprogramando)
 
-Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hora de mostrar un proyecto
+Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hora de mostrar un proyecto 
 
 - Nuevas funcionalidades de los lenguajes ECMAScritpt✔️
 - Manejo de archivos en JavaScript✔️
@@ -13,7 +13,8 @@ Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hor
 - Primera practica integradora ((>‿◠)✌) ✔️
 - Segunda Preentrega del Proyecto Final((>‿◠)✌) ✔️
 - Login Por Formulario ✔️
-- Estrategia de autenticacion por terceros (no finalizada)
+- Estrategia de autenticacion por terceros ✔️
+- Segunda practica integradora (>‿◠) (no finalizada)
 
 ## Desafio Entregable
 #  Estrategia de autenticacion por terceros
@@ -22,7 +23,8 @@ Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hor
 ### Express Handlebars ,Router , Clases para trabajar con mongoose 
 ### Practicamos Indexacion 
 ### Login Por formulario 
-### Agregamos estrategia por tercero (actual)
+### Agregamos estrategia por tercero 
+### Segunda practica Integradora (no finalizada)
 
 - Se instalarán las dependencias a partir del comando npm install ✔️
 - Se echará a andar el servidor✔️
