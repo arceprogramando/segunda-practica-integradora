@@ -11,7 +11,7 @@ Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hor
 - Router y Multer✔️
 - Motores de plantillas✔️
 - Primera practica integradora ((>‿◠)✌) ✔️
-- Segunda Preentrega del Proyecto Final((>‿◠)✌) ✔️
+- Post de Practica Integadora ((>‿◠)✌) ✔️
 - Login Por Formulario ✔️
 - Estrategia de autenticacion por terceros ✔️
 - Segunda practica integradora (>‿◠) (no finalizada)
@@ -192,7 +192,7 @@ npm init @eslint/config
 
 ### Fin de todos los paquetes en 1 
 
-Segundo instale [eslint](https://eslint.org) 
+Segundo instale [eslint]
 para una mejor escritura de mi codigo siguiendo la practica de el modelo de airbnb tambien se instalo como dependencia de desarrollo
 
 ```sh
@@ -201,7 +201,7 @@ npm init @eslint/config
 ```
 
 
-Tercero instalamos [express](http://expressjs.com)
+Tercero instalamos [express]
 
 ```sh
 npm install express
@@ -215,30 +215,30 @@ Cuarto agregamos a nuestro package.json
 
 ```
 
-Quinto instalamos [multer](https://www.npmjs.com/package/multer)
+Quinto instalamos [multer]
 
 ```sh
 npm install multer
 
 ```
-Sexto instalamos [socket.io](https://socket.io) para manejar los websocket entre cliente-servidor(aun no le se tanto)
+Sexto instalamos [socket.io] para manejar los websocket entre cliente-servidor(aun no le se tanto)
 
 
-Septimo instalamos [express-hamdlebars](https://www.npmjs.com/package/express-handlebars)
+Septimo instalamos [express-handlebars]
 
 ```sh
 npm install express-handlebars
 
 ```
 
-Octavo instalamos [mongoose](https://www.npmjs.com/package/mongoose) 
+Octavo instalamos [mongoose]
 
 ```sh
 npm install mongoose
 
 ```
 
-Noveno instalamos [cross-env](https://www.npmjs.com/package/cross-env) ejecutar scripts que establecen y utilizan variables de entorno en diferentes plataformas
+Noveno instalamos [cross-env] ejecutar scripts que establecen y utilizan variables de entorno en diferentes plataformas
 
 
 ```sh
@@ -246,7 +246,7 @@ npm install cross-env
 
 ```
 
-Decimo instalamos [dotenv](https://www.npmjs.com/package/dotenv) para cargar variables de entorno desde archivos de configuración locales.
+Decimo instalamos [dotenv] para cargar variables de entorno desde archivos de configuración locales.
 
 
 ```sh
@@ -254,7 +254,7 @@ npm install dotenv
 
 ```
 
-Undécimo instalamos [express-routemap](https://www.npmjs.com/package/express-routemap) para poder mapear nuestro conjunto de rutas a utilizar o en uso
+Undécimo instalamos [express-routemap] para poder mapear nuestro conjunto de rutas a utilizar o en uso
 
 
 ```sh
@@ -262,60 +262,59 @@ npm install express-routemap
 
 ```
 
-Duodécimo instalamos [cookie-parser](https://www.npmjs.com/package/cookie-parser) que se utiliza para analizar las cookies en las solicitudes entrantes y hacerlas accesibles en req.cookies.
+Duodécimo instalamos [cookie-parser] que se utiliza para analizar las cookies en las solicitudes entrantes y hacerlas accesibles en req.cookies.
 
 ```sh
 npm install cookie-parser
 
 ```
 
-Decimotercero instalamos [express-session](https://www.npmjs.com/package/express-session) que se utiliza para manejar sesiones en Express y permite almacenar y acceder a datos de sesión en cada solicitud a través de req.session
+Decimotercero instalamos [express-session] que se utiliza para manejar sesiones en Express y permite almacenar y acceder a datos de sesión en cada solicitud a través de req.session
 
 ```sh
 npm install express-session
 
 ```
-Decimocuarto instalamos [session-file-store](https://www.npmjs.com/package/session-file-store) para manejar como archivos en session las sesiones conectadas a base de datos
+Decimocuarto instalamos [session-file-store] para manejar como archivos en session las sesiones conectadas a base de datos
 
 ```sh
 npm install session-file-store
 
 ```
 
-DecimoQuinta instalamos [connect-mongo](https://www.npmjs.com/package/connect-mongo) que es una dependencia importante para conectar las sesiones de Express con MongoDB
+DecimoQuinta instalamos [connect-mongo] que es una dependencia importante para conectar las sesiones de Express con MongoDB
 ```sh
 npm install connect-mongo
 
 ```
-DecimoSexta instalamos [b-crypt](https://www.npmjs.com/package/bcrypt) dependencia para el manejo del hash de las contraseñas
+DecimoSexta instalamos [b-crypt] dependencia para el manejo del hash de las contraseñas
 
 ```sh
 npm install b-crypt
 
 ```
-decimoséptimo instalamos [passport](https://www.npmjs.com/package/passport) core passport de creacion de diferentes forma de logearse
+decimoséptimo instalamos [passport] core passport de creacion de diferentes forma de logearse
 ```sh
 npm install passport
 
 ```
-decimooctavo instalamos [passport-local](https://www.npmjs.com/package/passport-local)  una estrategia de autenticación que se utiliza con Passport para autenticar a los usuarios utilizando credenciales locales, como nombre de usuario y contraseña
+decimooctavo instalamos [passport-local]  una estrategia de autenticación que se utiliza con Passport para autenticar a los usuarios utilizando credenciales locales, como nombre de usuario y contraseña
 ```sh
 npm install passport-local
 
 ```
-decimonoveno instalamos [passport-github2](https://www.npmjs.com/package/passport-github2) para manejar la estrategia de creacion de usuarios con las herramientas e informacion que proporciona github en su conexion con passport
+decimonoveno instalamos [passport-github2] para manejar la estrategia de creacion de usuarios con las herramientas e informacion que proporciona github en su conexion con passport
 
 ```sh
 npm install passport-github2
 
 ```
-Veinte instalamos [jsonwebtoken](https://jwt.io) para el manejo de json web token (no utilizada en esta entrega)
+Veinte instalamos [jsonwebtoken] para el manejo de json web token (no utilizada en esta entrega)
 
 ```sh
 npm install jsonwebtoken
 
 ```
-
 
 ```
 http://localhost:8080/ 
@@ -339,8 +338,6 @@ http://localhost:8080/api/session/logout
 
 
 ```
-
-
 
   [Coderhouse]: <https://plataforma.coderhouse.com/cursos/43335/programacion-backend>
   [arceprogramando]: <https://github.com/arceprogramando>
