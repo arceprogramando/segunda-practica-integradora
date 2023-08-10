@@ -1,10 +1,15 @@
-import { genSalt, hashSync, compareSync } from 'bcrypt';
+import bcrypt from 'bcrypt';
 
-const createHashValue = async (val) => {
-  const salt = await genSalt();
-  return hashSync(val, salt);
+const createHash = async (password) => {
+  const saltRounds = 10;
+  return bcrypt.hash(password, saltRounds);
 };
 
-const isValidPasswd = async (psw, encryptedPsw) => compareSync(psw, encryptedPsw);
+const isValidPassword = (user, password) => bcrypt.compareSync(password, user.password);
 
-export { createHashValue, isValidPasswd };
+const encrypt = {
+  createHash,
+  isValidPassword,
+};
+
+export default encrypt;

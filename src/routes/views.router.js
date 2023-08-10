@@ -1,20 +1,26 @@
 import { Router } from 'express';
-import productModel from '../dao/models/products.models.js';
-import messageModel from '../dao/models/message.models.js';
+import productsModel from '../dao/models/products.models.js';
+import isLogged from '../middleware/auth.products.js';
+import MessageModel from '../dao/models/message.models.js';
 import CartModel from '../dao/models/carts.models.js';
-import authMdw from '../middlewares/auth.middleware.js';
 
 const router = Router();
 
 router.get('/', async (req, res) => {
-  res.render('login', {
-    style: 'index.css',
-  });
+  try {
+    return res.render('login', {
+      style: 'index.css',
+    });
+  } catch (error) {
+    return res.status(500).json({ error: 'Error al visualizar el login' });
+  }
 });
 
-router.get('/products', async (req, res) => {
+router.get('/products', isLogged, async (req, res) => {
   try {
-    const { page = 1, limit = 10, sort } = req.query;
+    const limit = req.query.limit || 10;
+    const page = req.query.page || 1;
+    const sort = req.query.sort || 'desc';
 
     const query = {};
 
@@ -31,10 +37,11 @@ router.get('/products', async (req, res) => {
     }
 
     const {
-      docs, hasPrevPage, hasNextPage, nextPage, prevPage,
-    } = await productModel.paginate(query, options);
+      docs, hasPrevPage, hasNextPage, prevPage, nextPage,
+    } = await productsModel.paginate(query, options);
 
     let visit;
+
     if (req.session.counter) {
       req.session.counter += 1;
       visit = `Se ha visitado el sitio ${req.session.counter} veces`;
@@ -54,20 +61,22 @@ router.get('/products', async (req, res) => {
       nextPage,
       user: req.session.user,
     });
+
   } catch (error) {
     res.status(500).json({ error: 'Error al obtener los productos' });
   }
 });
 
-router.get('/chat', async (req, res) => {
+router.get('/chat', isLogged, async (req, res) => {
   try {
-    const findmessage = await messageModel.find();
+    const findmessage = await MessageModel.find({});
     const messages = findmessage.map((message) => message.toObject());
-    // Aqui envio mis products
+
     res.render('chat', {
       messages,
       style: 'index.css',
     });
+
   } catch (error) {
     res.status(500).json({ error: 'Error al obtener los mensajes' });
   }
@@ -76,7 +85,6 @@ router.get('/chat', async (req, res) => {
 router.get('/carts/:id', async (req, res) => {
   try {
     const cart = await CartModel.findById({ _id: req.params.id }).populate('products.product');
-
     if (!cart) {
       return res.status(404).json({ error: 'Carrito no encontrado' });
     }
@@ -85,6 +93,7 @@ router.get('/carts/:id', async (req, res) => {
       cart: cart.toObject(),
       style: '../../css/index.css',
     });
+
   } catch (error) {
     return res.status(500).json({ error: `Error al obtener el carrito ${error}` });
   }
@@ -98,10 +107,8 @@ router.get('/recover', async (req, res) => {
   res.render('recover');
 });
 
-router.get('/profile', authMdw, async (req, res) => {
+router.get('/profile', isLogged, async (req, res) => {
   const { user } = req.session;
-  // eslint-disable-next-line no-console
-  console.log(user);
   res.render('profile', {
     followers: user.followers,
     lastname: user.firstname || user.login,

@@ -1,10 +1,10 @@
-import { Schema, model, Types } from 'mongoose';
+import mongoose from 'mongoose';
 
 const cartsCollection = 'carts';
 
-const cartItemSchema = new Schema({
+const cartsItemSchema = new mongoose.Schema({
   product: {
-    type: Types.ObjectId,
+    type: mongoose.Types.ObjectId,
     ref: 'products',
   },
   quantity: {
@@ -13,18 +13,19 @@ const cartItemSchema = new Schema({
   },
 });
 
-const cartSchema = new Schema({
-  products: {
-    type: [cartItemSchema],
+const cartSchema = new mongoose.Schema({
+  product: {
+    type: [cartsItemSchema],
     default: [],
   },
 });
 
-const CartModel = model(cartsCollection, cartSchema);
+const CartModel = mongoose.model(cartsCollection, cartSchema);
 
 /* Tambien puedo usar (
 Schema.pre('find',function(){
   this.populate('notes.note')
 }) // Para hacer generico el populate
   */
+
 export default CartModel;

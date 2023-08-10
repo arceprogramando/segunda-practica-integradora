@@ -8,12 +8,18 @@ const productsSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  description: String,
-  code: String,
+  description: {
+    type: String,
+    required: true,
+  },
+  code: {
+    type: String,
+    required: true,
+  },
   price: {
     type: Number,
     required: true,
-    index: true, // Con index: true podria indexarlo
+    index: true, // Con index: true se indexa
   },
   status: Boolean,
   stock: Number,
@@ -23,6 +29,6 @@ const productsSchema = new mongoose.Schema({
 
 productsSchema.plugin(mongoosePagination);
 
-const productModel = mongoose.model(productsCollection, productsSchema);
+const ProductsModel = mongoose.model(productsCollection, productsSchema);
 
-export default productModel;
+export default ProductsModel;
