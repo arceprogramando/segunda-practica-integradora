@@ -14,7 +14,7 @@ Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hor
 - Post de Practica Integadora ((>‿◠)✌) ✔️
 - Login Por Formulario ✔️
 - Estrategia de autenticacion por terceros ✔️
-- Segunda practica integradora (>‿◠) (no finalizada)
+- Segunda practica integradora (>‿◠) ✔️
 
 ## Desafio Entregable
 #  Estrategia de autenticacion por terceros
@@ -24,7 +24,7 @@ Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hor
 ### Practicamos Indexacion 
 ### Login Por formulario 
 ### Agregamos estrategia por tercero 
-### Segunda practica Integradora (no finalizada)
+### Segunda practica Integradora✔️
 
 - Se instalarán las dependencias a partir del comando npm install ✔️
 - Se echará a andar el servidor✔️
