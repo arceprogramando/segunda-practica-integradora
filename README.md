@@ -1,6 +1,6 @@
-# Segunda practica Integradora (No finalizada)
+# Segunda practica Integradora 
 ## _Felipe Antonio Aleman Arce_
-### Ejercicio 10 entregable , Segunda practica Integradora( No Finalizada)
+### Ejercicio 10 entregable , Segunda practica Integradora
 [![Coderhouse](https://res.cloudinary.com/hdsqazxtw/image/upload/v1570710978/coderhouse.jpg)](https://github.com/arceprogramando)
 
 Estoy haciendo esto para poder tener un ejemplo de como hacer un readme a la hora de mostrar un proyecto 
